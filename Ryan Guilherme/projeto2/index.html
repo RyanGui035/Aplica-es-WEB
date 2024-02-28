@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo PHP</title>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <center>
+    <h1>Formulário</h1>
+    <form action="processa.php" method="GET">
+            <div>
+              <label for="nome">Nome:</label>
+              <input type="text" id="idnome" name="nome" >
+            </div><br>
+            <div>
+              <label for="email">E-mail:</label>
+              <input type="email" id="idemail" name="email">
+            </div><br>
+            <div>
+              <label for="msg">Mensagem:</label>
+              <textarea id="idmensagem" name="mensagem"></textarea>
+            </div><br>
+
+            <fieldset>
+                <legend> Escolha seu curso :</legend>
+              
+                <div>
+                  <input type="checkbox"  name="curso[]" value="si"  >
+                  <label for="horns">SI</label>
+                </div>
+              
+                <div>
+                  <input type="checkbox"  name="curso[]" value="tads" >
+                  <label for="horns">TADS</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Selecione seu sexo:</legend>
+              
+                <div>
+                  <input type="radio" name="sexo" value="masculio" checked />
+                  <label >Masculino</label>
+                </div>
+              
+                <div>
+                  <input type="radio" name="sexo" value="feminino" />
+                  <label> Feminino</label>
+                </div>
+            </fieldset>
+            <div class="button">
+              <button type="submit" class="btn btn-primary">Enviar sua mensagem</button>
+            </div>
+          </form>
+        </center>
+</body>
+</html>
